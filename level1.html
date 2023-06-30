@@ -1,0 +1,41 @@
+<html>
+ <head>
+    <script src="puzzle.js"></script>
+    <audio id="kaiten" preload="auto">
+        <source src="oto/kaiten.mp3" type="audio/mp3">
+    </audio>
+    <audio id="ochiru" preload="auto">
+        <source src="oto/ochiru.mp3" type="audio/mp3">
+    </audio> 
+    <audio id="don" preload="auto">
+        <source src="oto/don.mp3" type="audio/mp3">
+    </audio>
+    <audio id="kieru" preload="auto">
+        <source src="oto/kieru.mp3" type="audio/mp3">
+    </audio>
+    <audio id="zenbu" preload="auto">
+        <source src="oto/zenbu.mp3" type="audio/mp3">
+    </audio>
+    <audio id="gameover" preload="auto">
+        <source src="oto/gameover.mp3" type="audio/mp3">
+    </audio> 
+
+ </head>
+ <body onload="hajime()" onkeydown="ugokasu(event)">
+    <div style="position:absolute; left:20px; top:10;">
+        <hi>落ちモノパズル</hi>
+        <div style="width:380px;">
+            スコア:<span id="tokuten">0</span>
+        </div>
+    </div>
+    <canvas id = "back" width="240" height="440" style="position:absolute;left:20px; top:150; background-color:black">  
+    </canvas>
+    <canvas id = "game" width="240" height="440" style="position: absolute; left:20px; top:150px; background-color:transparent">
+    </canvas>
+    <canvas id = "tsugi" width="80" height="80"  style="position: absolute; left:300px; top:150px; background-color:black">
+    </canvas>
+    <button id = "kaishibtn" style="position: absolute;left:300px; top:300px; width:80px; height:50px;"" onclick="gamekaishi()">
+        ゲーム<br>スタート
+    </button>
+ </body>
+</html>
